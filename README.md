@@ -40,7 +40,8 @@ Repositori ini memuat **Project 1** (aplikasi web Bloomy's Flower Shop) dan **Pr
 ![Template Pembelian](./Project-1/screenshoots_web/Template_pembelian.jpeg)
 
 
-### Hubugi Kami & Footer
+### Footer Hubugi Kami
+![Footer_detail](./Project-1/screenshoots_web/Footer_detail.jpeg)
 ![instagram](./Project-1/screenshoots_web/instagram.jpeg)
 ![whatsapp](./Project-1/screenshoots_web/whatsapp.jpeg)
 
