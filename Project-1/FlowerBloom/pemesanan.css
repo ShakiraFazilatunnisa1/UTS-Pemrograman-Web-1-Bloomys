@@ -1,0 +1,465 @@
+
+/* =====================================
+   BLOOMY'S - HALAMAN PEMESANAN
+===================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+    background: #FAF8F5;
+    color: #292725;
+}
+
+/* NAVBAR */
+
+.order-navbar {
+    background: #FFFFFF;
+    padding: 16px 0;
+    border-bottom: 1px solid #F0EAE6;
+}
+
+.order-logo {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    text-decoration: none;
+}
+
+.order-logo .logo-icon {
+    color: #D98291;
+    font-size: 29px;
+}
+
+.order-logo strong {
+    display: block;
+    color: #D98291;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+}
+
+.order-logo small {
+    display: block;
+    color: #879C70;
+    font-size: 8px;
+    letter-spacing: 2px;
+}
+
+.order-back {
+    color: #879C70;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.order-back:hover {
+    color: #D98291;
+}
+
+/* HEADER */
+
+.order-section {
+    padding: 55px 0 85px;
+    min-height: 650px;
+}
+
+.order-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.order-heading .section-label {
+    color: #879C70;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.order-heading h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #292725;
+    margin-bottom: 12px;
+}
+
+.order-heading > p:last-child {
+    color: #88817C;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/* GAMBAR PRODUK */
+
+.order-image {
+    width: 100%;
+    height: 530px;
+    overflow: hidden;
+    border-radius: 18px;
+    background: #F9E8E9;
+    box-shadow: 0 10px 30px rgba(80, 60, 50, 0.08);
+}
+
+.order-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.order-image:hover img {
+    transform: scale(1.04);
+}
+
+.order-image-caption {
+    margin-top: 15px;
+    color: #879C70;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.order-image-caption i {
+    margin-right: 6px;
+}
+
+/* FORM PEMESANAN */
+
+.order-form {
+    background: #FFFFFF;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(80, 60, 50, 0.06);
+}
+
+.order-category {
+    color: #879C70;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.order-form h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #292725;
+    margin-bottom: 10px;
+}
+
+.order-price {
+    color: #D98291;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.order-description {
+    color: #77736F;
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+.order-form hr {
+    border-color: #EEE7E2;
+    margin: 22px 0;
+}
+
+/* FORM GROUP */
+
+.order-group {
+    margin-bottom: 23px;
+}
+
+.order-label {
+    display: block;
+    color: #39302D;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 13px;
+}
+
+.order-label span {
+    color: #99918B;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+/* PILIHAN WARNA */
+
+.order-colors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.order-color {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.order-color input {
+    display: none;
+}
+
+.color-dot {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 2px solid #E9E2DD;
+    transition: 0.2s;
+}
+
+.order-color input:checked + .color-dot {
+    outline: 2px solid #D98291;
+    outline-offset: 3px;
+}
+
+.order-color:hover .color-dot {
+    transform: scale(1.1);
+}
+
+.order-color small {
+    color: #77736F;
+    font-size: 11px;
+}
+
+.dot-pink {
+    background: #EBA7B7;
+}
+
+.dot-white {
+    background: #FFFFFF;
+}
+
+.dot-red {
+    background: #B93650;
+}
+
+.dot-peach {
+    background: #F2B89C;
+}
+
+.dot-mix {
+    background: linear-gradient(
+        135deg,
+        #EBA7B7 33%,
+        #FFFFFF 33% 66%,
+        #F2B89C 66%
+    );
+}
+
+/* PILIHAN WRAPPING */
+
+.order-select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #E8DDD8;
+    border-radius: 8px;
+    background: #FFFFFF;
+    color: #514B48;
+    font-size: 12px;
+    outline: none;
+    cursor: pointer;
+}
+
+.order-select:focus {
+    border-color: #D98291;
+}
+
+/* JUMLAH PESANAN */
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    overflow: hidden;
+    border: 1px solid #E8DDD8;
+    border-radius: 8px;
+}
+
+.quantity-control button {
+    width: 38px;
+    height: 38px;
+    border: none;
+    background: #F9F6F0;
+    color: #879C70;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.quantity-control button:hover {
+    background: #F9E8E9;
+}
+
+.quantity-control input {
+    width: 55px;
+    height: 38px;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* CATATAN REQUEST */
+
+#catatan {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #E8DDD8;
+    border-radius: 9px;
+    background: #FFFFFF;
+    color: #514B48;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    line-height: 1.8;
+    resize: vertical;
+    outline: none;
+    transition: 0.3s;
+}
+
+#catatan:focus {
+    border-color: #D98291;
+    box-shadow: 0 0 0 3px rgba(217, 130, 145, 0.10);
+}
+
+.order-hint {
+    display: block;
+    margin-top: 8px;
+    color: #99918B;
+    font-size: 10px;
+    line-height: 1.7;
+}
+
+/* TOTAL HARGA */
+
+.order-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 0;
+    margin: 10px 0 20px;
+    border-top: 1px solid #EEE7E2;
+    border-bottom: 1px solid #EEE7E2;
+}
+
+.order-total span {
+    color: #514B48;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.order-total strong {
+    color: #D98291;
+    font-size: 19px;
+}
+
+/* TOMBOL PESAN */
+
+.order-submit {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #D98291;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.order-submit:hover {
+    background: #C66E7D;
+    transform: translateY(-3px);
+}
+
+.order-submit i {
+    margin-right: 8px;
+}
+
+/* FOOTER */
+
+.order-footer {
+    padding: 30px 0;
+    background: #FFFFFF;
+    border-top: 1px solid #F0EAE6;
+}
+
+.order-footer h3 {
+    color: #D98291;
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+}
+
+.order-footer p {
+    color: #99918B;
+    font-size: 10px;
+    margin: 8px 0 0;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 991px) {
+
+    .order-image {
+        height: 430px;
+    }
+
+    .order-form {
+        padding: 25px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .order-section {
+        padding: 40px 0 55px;
+    }
+
+    .order-heading h1 {
+        font-size: 28px;
+    }
+
+    .order-image {
+        height: 350px;
+    }
+
+    .order-form h2 {
+        font-size: 25px;
+    }
+
+    .order-back {
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .order-image {
+        height: 300px;
+    }
+
+    .order-form {
+        padding: 20px;
+    }
+
+    .order-colors {
+        gap: 16px;
+    }
+
+    .order-heading h1 {
+        font-size: 25px;
+    }
+
+}
