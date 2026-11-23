@@ -31,19 +31,18 @@ Repositori ini memuat **Project 1** (aplikasi web Bloomy's Flower Shop) dan **Pr
 ![Akun Demo](./Project-1/screenshoots_web/Akun_demo.jpeg)
 
 ### Halaman Utama & Pembelian
-![Header Pembelian](./Project-1/screenshoots_web/Header_pembelian.jpeg)
 ![Halaman Utama](./Project-1/screenshoots_web/Halaman_utama.jpeg)
 ![Beli Produk](./Project-1/screenshoots_web/Beli_produk.jpeg)
+![Header Pembelian](./Project-1/screenshoots_web/Header_pembelian.jpeg)
 ![Form Pembelian](./Project-1/screenshoots_web/Form_pembelian.jpeg)
+![Footer Pembelian](./Project-1/screenshoots_web/Footer_pembelian.jpeg)
 ![Pembelian](./Project-1/screenshoots_web/Pembelian.jpeg)
 ![Template Pembelian](./Project-1/screenshoots_web/Template_pembelian.jpeg)
-![Footer Pembelian](./Project-1/screenshoots_web/Footer_pembelian.jpeg)
 
-### Tanya Kami & Footer
+
+### Hubugi Kami & Footer
 ![instagram](./Project-1/screenshoots_web/instagram.jpeg)
 ![whatsapp](./Project-1/screenshoots_web/whatsapp.jpeg)
-![Footer](./Project-1/screenshoots_web/Footer.jpeg)
-![Footer Detail](./Project-1/screenshoots_web/Footer_detail.jpeg)
 
 ---
 
