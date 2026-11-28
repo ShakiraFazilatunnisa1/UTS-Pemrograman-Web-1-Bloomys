@@ -1,0 +1,348 @@
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | Bloomy's Flower Shop</title>
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- BOOTSTRAP ICONS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body class="auth-body">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid px-lg-5">
+
+            <a class="navbar-brand" href="index.html">
+                <span class="logo-icon">✿</span>
+                <span class="logo-text">
+                    Bloomy's
+                    <small>FLOWER BLOOM SHOP</small>
+                </span>
+            </a>
+
+            <a href="index.html" class="auth-home-link">
+                <i class="bi bi-house"></i> Beranda
+            </a>
+
+        </div>
+    </nav>
+
+
+    <!-- LOGIN SECTION -->
+    <section class="auth-section">
+
+        <div class="container">
+
+            <div class="auth-card">
+
+                <!-- BAGIAN KIRI -->
+                <div class="auth-decoration">
+
+                    <div class="auth-flower">✿</div>
+
+                    <p class="auth-small-title">
+                        SELAMAT DATANG BLOOMY'S
+                    </p>
+
+                    <h1>
+                        LOGIN ACCOUNT <br>
+                        <span>Bloomy's.</span>
+                    </h1>
+
+                    <p>
+                        Senang melihatmu kembali!
+                        Masuk dan temukan keindahan
+                        bunga untuk setiap momen spesialmu.
+                    </p>
+
+                    <div class="auth-bottom-text">
+                        Setiap bunga memiliki cerita untuk disampaikan.
+                    </div>
+
+                </div>
+
+
+                <!-- BAGIAN KANAN -->
+                <div class="auth-form-area">
+
+                    <div class="auth-form-header">
+
+                        <span class="auth-icon">
+                            <i class="bi bi-flower1"></i>
+                        </span>
+
+                        <h2>Masuk Akun</h2>
+
+                        <p>
+                            Silakan masukkan akunmu untuk melanjutkan.
+                        </p>
+
+                    </div>
+
+
+                    <!-- FORM LOGIN -->
+                    <form id="loginForm">
+
+                        <!-- EMAIL -->
+                        <div class="auth-input-group">
+
+                            <label for="loginEmail">Email</label>
+
+                            <div class="input-icon">
+
+                                <i class="bi bi-envelope"></i>
+
+                                <input type="email"
+                                    id="loginEmail"
+                                    placeholder="Masukkan email kamu"
+                                    autocomplete="email"
+                                    required>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- PASSWORD -->
+                        <div class="auth-input-group">
+
+                            <label for="loginPassword">Password</label>
+
+                            <div class="input-icon">
+
+                                <i class="bi bi-lock"></i>
+
+                                <input type="password"
+                                    id="loginPassword"
+                                    placeholder="Masukkan password"
+                                    autocomplete="current-password"
+                                    required>
+
+                                <button type="button"
+                                    class="password-toggle"
+                                    onclick="togglePassword('loginPassword', this)">
+
+                                    <i class="bi bi-eye"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- REMEMBER ME -->
+                        <div class="auth-options">
+
+                            <label class="remember-label">
+                                <input type="checkbox" id="rememberMe">
+                                Ingat saya
+                            </label>
+
+                            <a href="#" class="forgot-link">
+                                Lupa password?
+                            </a>
+
+                        </div>
+
+
+                        <!-- BUTTON LOGIN -->
+                        <button type="submit" class="auth-submit">
+
+                            Masuk Sekarang
+                            <i class="bi bi-arrow-right"></i>
+
+                        </button>
+
+
+                        <!-- PESAN LOGIN -->
+                        <div id="loginMessage" class="auth-message"></div>
+
+
+                        <!-- REGISTER LINK -->
+                        <p class="auth-switch">
+
+                            Belum memiliki akun?
+
+                            <a href="registrasi.html">
+                                Daftar sekarang
+                            </a>
+
+                        </p>
+
+                    </form>
+
+
+                    <!-- PANEL LUPA PASSWORD -->
+                    <div id="forgotPasswordBox"
+                        class="mt-4 pt-3 border-top"
+                        style="display: none;">
+
+                        <div class="mb-3">
+
+                            <h5 class="mb-1 fw-bold">
+                                Reset Password
+                            </h5>
+
+                            <small class="text-muted">
+                                Masukkan email terdaftar dan password baru.
+                                Minimal 8 karakter.
+                            </small>
+
+                        </div>
+
+
+                        <!-- EMAIL RESET -->
+                        <div class="auth-input-group">
+
+                            <label for="resetEmail">
+                                Email Terdaftar
+                            </label>
+
+                            <div class="input-icon">
+
+                                <i class="bi bi-envelope"></i>
+
+                                <input type="email"
+                                    id="resetEmail"
+                                    placeholder="Masukkan email kamu">
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- PASSWORD BARU -->
+                        <div class="auth-input-group">
+
+                            <label for="resetNewPassword">
+                                Password Baru
+                            </label>
+
+                            <div class="input-icon">
+
+                                <i class="bi bi-lock"></i>
+
+                                <input type="password"
+                                    id="resetNewPassword"
+                                    placeholder="Masukkan password baru">
+
+                                <button type="button"
+                                    class="password-toggle"
+                                    onclick="togglePassword('resetNewPassword', this)">
+
+                                    <i class="bi bi-eye"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- BUTTON RESET -->
+                        <div class="d-flex gap-2">
+
+                            <button type="button"
+                                id="btnSaveNewPassword"
+                                class="auth-submit flex-grow-1">
+
+                                Simpan Password
+
+                            </button>
+
+                            <button type="button"
+                                id="btnCancelReset"
+                                class="btn btn-outline-secondary">
+
+                                Batal
+
+                            </button>
+
+                        </div>
+
+
+                        <div id="resetMessage"
+                            class="auth-message mt-2">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+  <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container text-center">
+
+            <h3>✿ Bloomy's</h3>
+
+            <p>
+                Flowers make every moment beautiful.
+            </p>
+
+            <div class="social-links justify-content-center mt-3">
+
+                <a href="https://www.instagram.com/sha.fzltnn/"
+                    target="_blank">
+
+                    <i class="bi bi-instagram"></i>
+
+                </a>
+
+                <a href="https://wa.me/6281224103373"
+                    target="_blank">
+
+                    <i class="bi bi-whatsapp"></i>
+
+                </a>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    @Copyright by 24552011001_SHAKIRA FAZILATUNNISA_TIF RP 24B CID
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="JavaScript/app.js"></script>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

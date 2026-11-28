@@ -1,0 +1,350 @@
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | Bloomy's Flower Shop</title>
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- BOOTSTRAP ICONS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg">
+
+        <div class="container-fluid px-lg-5">
+
+            <a class="navbar-brand" href="menu-utama.html">
+
+                <span class="logo-icon">✿</span>
+
+                <span class="logo-text">
+                    Bloomy's
+                    <small>FLOWER BLOOM SHOP</small>
+                </span>
+
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuNavbar">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuNavbar">
+
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="menu-utama.html">
+                            Dashboard
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#produk">
+                            Produk
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <span class="nav-link user-profile">
+                            <i class="bi bi-person-circle"></i>
+                            <span id="userName">Pengguna</span>
+                        </span>
+                    </li>
+
+                    <li class="nav-item">
+                        <button class="logout-btn" onclick="logoutUser()">
+                            <i class="bi bi-box-arrow-right"></i>
+                            Logout
+                        </button>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- WELCOME SECTION -->
+    <section class="dashboard-welcome">
+
+        <div class="container">
+
+            <div class="dashboard-banner">
+
+                <div class="row align-items-center g-4">
+
+                    <div class="col-lg-6">
+
+                        <p class="welcome-label">
+                            ✿ WELCOME TO BLOOMY'S
+                        </p>
+
+                        <h1>
+                            Hello,
+                            <span id="welcomeName">Flower Lover!</span>
+                        </h1>
+
+                        <p>
+                            Selamat datang di Bloomy's Flower Shop.
+                            Temukan rangkaian bunga terbaik untuk
+                            menemani setiap momen istimewamu.
+                        </p>
+
+                        <a href="#produk" class="btn-primary-custom">
+                            Lihat Koleksi
+                            <span>→</span>
+                        </a>
+
+                    </div>
+
+                    <div class="col-lg-6">
+
+                        <img src="image/beranda-1.JPEG"
+                            alt="Koleksi bunga Bloomy's">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRODUCT SECTION -->
+    <section class="dashboard-products" id="produk">
+
+        <div class="container">
+
+            <div class="product-heading">
+
+                <div>
+
+                    <p class="section-label">
+                        KOLEKSI KAMI
+                    </p>
+
+                    <h2>
+                        Temukan Bunga yang Sempurna
+                    </h2>
+
+                </div>
+
+                <p>
+                    Beautiful flowers for every moment ✿
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+                <!-- PRODUK 1 -->
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="dashboard-card">
+
+                        <img src="image/garbera.JPEG"
+                            alt="Garbera Bouquet">
+
+                        <div class="dashboard-card-info">
+
+                            <h5>Garbera Bouquet</h5>
+
+                            <a href="pemesanan.html?id=1"
+                                class="detail-btn">
+                                Beli Sekarang →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUK 2 -->
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="dashboard-card">
+
+                        <img src="image/sunflower.JPEG"
+                            alt="Sunflower Happiness">
+
+                        <div class="dashboard-card-info">
+
+                            <h5>Sunflower Happiness</h5>
+
+                            <a href="pemesanan.html?id=2"
+                                class="detail-btn">
+                                Beli Sekarang →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUK 3 -->
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="dashboard-card">
+
+                        <img src="image/pinkrose.JPEG"
+                            alt="Rose Dream">
+
+                        <div class="dashboard-card-info">
+
+                            <h5>Rose Dream</h5>
+
+                            <a href="pemesanan.html?id=3"
+                                class="detail-btn">
+                                Beli Sekarang →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUK 4 -->
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="dashboard-card">
+
+                        <img src="image/lily.JPEG"
+                            alt="Lily Elegance">
+
+                        <div class="dashboard-card-info">
+
+                            <h5>Lily Elegance</h5>
+
+                            <a href="pemesanan.html?id=4"
+                                class="detail-btn">
+                                Beli Sekarang →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container text-center">
+
+            <h3>✿ Bloomy's</h3>
+
+            <p>
+                Flowers make every moment beautiful.
+            </p>
+
+            <div class="social-links justify-content-center mt-3">
+
+                <a href="https://www.instagram.com/sha.fzltnn/"
+                    target="_blank">
+
+                    <i class="bi bi-instagram"></i>
+
+                </a>
+
+                <a href="https://wa.me/6281224103373"
+                    target="_blank">
+
+                    <i class="bi bi-whatsapp"></i>
+
+                </a>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    @Copyright by 24552011001_SHAKIRA FAZILATUNNISA_TIF RP 24B CID
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT SEMENTARA UNTUK DASHBOARD -->
+    <script>
+
+        // Memeriksa sesi login
+        const currentUser = JSON.parse(
+            localStorage.getItem("flowerBloomCurrentUser")
+        );
+
+        if (!currentUser) {
+            window.location.href = "login.html";
+        } else {
+
+            document.getElementById("userName").textContent =
+                currentUser.name;
+
+            document.getElementById("welcomeName").textContent =
+                currentUser.name;
+        }
+
+        // Fungsi logout
+        function logoutUser() {
+
+            localStorage.removeItem("flowerBloomCurrentUser");
+
+            window.location.href = "index.html";
+
+        }
+
+    </script>
+
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
